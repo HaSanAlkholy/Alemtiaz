@@ -1519,6 +1519,12 @@ footer .footer-top .top-info .top-icon {
   }
 }
 
+@media (max-width: 992px) {
+  footer .footer-top .top-info .top-icon {
+    margin-bottom: 15px;
+  }
+}
+
 footer .footer-top .top-info .top-icon .icon {
   height: 64px;
   width: 64px;
