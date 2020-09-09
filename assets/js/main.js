@@ -1,5 +1,11 @@
 $(window).on('load', function () {
 
+  //preloader
+  $('.pre-loader').fadeOut("500", function () {
+    $('html').removeClass("overflow");
+    $(this).remove();
+  });
+
   //nava toggle
   $('#nava-icon').click(function (e) {
     $('#nava').toggleClass('nava-active');
