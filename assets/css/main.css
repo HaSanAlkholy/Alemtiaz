@@ -1696,6 +1696,12 @@ footer .footer-bottom .footer-mail .b-body .mail input {
   color: #7b7b7b;
 }
 
+@media (max-width: 576px) {
+  footer .footer-bottom .footer-mail .b-body .mail input {
+    padding-top: 3px;
+  }
+}
+
 footer .footer-bottom .footer-mail .b-body .mail .mail-btn {
   position: absolute;
   top: 50%;

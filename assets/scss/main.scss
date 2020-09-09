@@ -1236,6 +1236,11 @@ footer {
                         padding: 0 30px;
                         font-size: 15px;
                         color: rgba(123, 123, 123, 255);
+
+                        
+                    @media (max-width: 576px) {
+                        padding-top:3px;
+                    }
                     }
 
                     .mail-btn {
