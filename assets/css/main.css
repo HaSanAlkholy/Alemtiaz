@@ -314,7 +314,8 @@ nav .nav-bottom .nava .nava-social {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: right;
-    padding: 30px;
+    padding: 0 30px;
+    padding-top: 30px;
   }
   nav .nav-bottom .nava .nava-content .nava-head {
     display: -webkit-box;

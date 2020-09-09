@@ -140,7 +140,8 @@ nav {
                     transition: all 0.5s;
                     flex-direction: column;
                     text-align: right;
-                    padding: 30px;
+                    padding:0 30px;
+                    padding-top:30px;
 
                     .nava-head {
                         display: flex;
