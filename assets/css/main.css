@@ -1668,11 +1668,13 @@ footer .footer-bottom .footer-mail .b-body .mail {
   height: 45px;
   width: 358px;
   position: relative;
+  margin: auto;
 }
 
 @media (max-width: 576px) {
   footer .footer-bottom .footer-mail .b-body .mail {
     width: 300px;
+    margin: auto;
   }
 }
 
@@ -1898,6 +1900,12 @@ html[dir="ltr"] footer .footer-bottom .links .b-body ul:nth-child(1) {
 html[dir="ltr"] footer .footer-bottom .footer-social .b-body .social-item {
   margin-left: unset;
   margin-right: 24px;
+}
+
+@media (max-width: 992px) {
+  html[dir="ltr"] footer .footer-bottom .footer-social .b-body .social-item {
+    margin: 0 12px;
+  }
 }
 
 html[dir="ltr"] footer .footer-bottom .footer-mail .b-body .mail .mail-btn {
