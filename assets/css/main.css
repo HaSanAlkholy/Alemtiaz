@@ -637,6 +637,13 @@ nav .nav-bottom .nav-icons div {
   cursor: pointer;
 }
 
+@media (max-width: 576px) {
+  .search-form .close-search {
+    margin-bottom: 130px;
+    margin-top: 75px;
+  }
+}
+
 .search-form .search {
   width: 33.572%;
   text-align: center;
