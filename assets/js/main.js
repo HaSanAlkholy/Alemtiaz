@@ -177,14 +177,13 @@ $(window).scroll(function() {
 
         {
 
-          duration: 2000,
-          easing: 'swing',
+          duration: 3000,
+          easing: 'linear',
           step: function() {
             $this.text(Math.floor(this.countNum));
           },
           complete: function() {
             $this.text(this.countNum);
-            //alert('finished');
           }
 
         });
