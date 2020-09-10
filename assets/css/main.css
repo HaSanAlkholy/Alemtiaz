@@ -2112,7 +2112,7 @@ html[dir="ltr"] #about .about-bottom .b-text .about-item .head {
 @media (max-width: 992px) {
   html[dir="ltr"] #about .about-bottom .b-text .about-item .head {
     margin-left: 0px;
-    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
