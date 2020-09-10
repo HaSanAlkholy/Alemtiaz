@@ -162,36 +162,48 @@ $(window).on('load', function () {
   // counter
 
   var a = 0;
-$(window).scroll(function() {
+  $(window).scroll(function () {
 
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.counter-value').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
+    var oTop = $('#counter').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.counter-value').each(function () {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.text()
+        }).animate({
           countNum: countTo
         },
 
-        {
+          {
 
-          duration: 3000,
-          easing: 'linear',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-          }
+            duration: 3000,
+            easing: 'linear',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+            }
 
-        });
-    });
-    a = 1;
+          });
+      });
+      a = 1;
+    }
+
+  });
+
+
+  // defer iframe
+
+  var vidDefer = document.getElementsByTagName('iframe');
+  for (var i = 0; i < vidDefer.length; i++) {
+    if (vidDefer[i].getAttribute('data-src')) {
+      vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+    }
   }
 
-});
+  console.clear();
 
 
 });
