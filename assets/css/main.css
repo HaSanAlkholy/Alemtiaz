@@ -2085,6 +2085,13 @@ html[dir="ltr"] #about .about-bottom {
   background-image: url("../img/about/about-bg-en.jpg");
 }
 
+@media (max-width: 576px) {
+  html[dir="ltr"] #about .about-bottom {
+    background-image: linear-gradient(45deg, #B89E35, #B89E35);
+    padding: 50px 0;
+  }
+}
+
 html[dir="ltr"] #about .about-bottom .b-video {
   margin-right: 40px;
   margin-left: -60px;
