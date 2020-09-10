@@ -148,7 +148,7 @@ $(window).on('load', function () {
   // animate on scroll
 
   AOS.init({
-    duration: 900,
+    duration: 700,
     mirror: true,
     once: true,
     disable: function () {
