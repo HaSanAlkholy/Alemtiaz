@@ -31,10 +31,12 @@
             <div class="nav-top">
                 <div class="c2">
                     <div class="call">
-                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>   Call: 0540000000
-                    </div>
+                        <div class="icon"><i class="fas fa-mobile-alt"></i></div><a href="tel:0540000000">  Call: 0540000000
+                   </a> </div>
                     <div class="mail">
-                        <div class="icon"><i class="far fa-envelope"></i></div> Mail: info@alemtiaz.com
+                        <div class="icon"><i class="far fa-envelope"></i></div><a href="mailto:info@alemtiaz.com">Mail:
+                            info@alemtiaz.com
+                        </a>
                     </div>
                     <div class="nav-social">
                         <div class="social-item"><a href="#"> <i class="fab fa-youtube"></i> </a></div>
@@ -46,15 +48,15 @@
                     <div class="lang"> <a href="./index.html"> عربى</a></div>
                 </div>
             </div>
-            <div class="nav-bottom" >
+            <div class="nav-bottom">
                 <div class="c2">
-                    <div class="nav-logo" ><a href="#"><img src="./assets/img/logo.png" alt=".."></a></div>
-                    <div class="nava" id="nava" >
+                    <div class="nav-logo"><a href="#"><img src="./assets/img/logo.png" alt=".."></a></div>
+                    <div class="nava" id="nava">
                         <div class="nava-content">
                             <div class="nava-head">
                                 <div class="nava-lang"> <a href="./index.html"> عربى</a></div>
                                 <div class="nava-close" id="close-nava">
-                                    <span class="lnr lnr-cross"></span>
+                                    <i class="fas fa-times"></i>
                                 </div>
                             </div>
                             <ul>
@@ -83,22 +85,22 @@
                     </div>
                     <div class="nav-icons">
                         <div class="menu" id="nava-icon">
-                            <span class="lnr lnr-menu"></span>
+                            <i class="fas fa-bars"></i>
                         </div>
                         <div class="search" id="search-btn">
-                            <span class="lnr lnr-magnifier"></span>
+                            <i class="fas fa-search"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    
+
     <div class="search-form" id="search-form">
-        <div class="close-search" id="close-search"><span class="lnr lnr-cross"></span></div>
+        <div class="close-search" id="close-search"><i class="fas fa-times"></i></div>
         <div class="search">
             <input type="text" id="search-input" placeholder="Search" autocomplete="false">
-            <div class="searching"><span class="lnr lnr-magnifier"></span></div>
+            <div class="searching"><i class="fas fa-search"></i></div>
         </div>
     </div>
 
@@ -142,38 +144,39 @@
                         <h1>Specialized in gum, gutin <br>
                             And men's clothing</h1>
                     </div>
-                    <div class="top-body"  data-aos="fade-left">
+                    <div class="top-body" id="counter" data-aos="fade-left">
                         <div class="years">
                             <div class="head">Years of experience</div>
-                            <div class="num">+20</div>
+                            <div class="num">+<span class="counter-value" data-count="20">0</span> </div>
                         </div>
                         <div class="local">
                             <div class="head">Local products</div>
-                            <div class="num">+500</div>
+                            <div class="num">+<span class="counter-value" data-count="500">0</span> </div>
                         </div>
                         <div class="global">
                             <div class="head">Universal products</div>
-                            <div class="num">+1000</div>
+                            <div class="num">+<span class="counter-value" data-count="1000">0</span> </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="about-bottom">
                 <div class="c2">
-                    <div class="b-video"  data-aos="fade-left">
-                        <div class="head" id="about-head">
-                            <a href="https://www.youtube.com/embed/ZwVDrCurr1I" target="_blank"> <img
-                                    src="./assets/img/about/about.jpg" alt=".."></a>
+                    <div class="b-video" data-aos="fade-left">
+                        <div class="head" id="about-head" onclick="$('#about-video').fadeIn(500)">
+                          <img
+                                    src="./assets/img/about/about.jpg" alt="..">
                         </div>
                     </div>
-                    <div class="b-text"  data-aos="fade-right">
+                    <div class="b-text" data-aos="fade-right">
                         <div class="about-item">
                             <div class="head">
                                 <img src="./assets/img/about/1.png" alt="..">
                             </div>
                             <div class="body">
                                 <h3>Our vision</h3>
-                                <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in literature.
+                                <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in
+                                    literature.
                                     Classical Latin since the year 45 BC</p>
                             </div>
                         </div>
@@ -183,7 +186,8 @@
                             </div>
                             <div class="body">
                                 <h3>Our goals</h3>
-                                <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in literature.
+                                <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in
+                                    literature.
                                     Classical Latin since the year 45 BC</p>
                             </div>
                         </div>
@@ -192,6 +196,15 @@
             </div>
         </div>
     </section>
+
+    <div class="about-video" id="about-video">
+        <div class="video-close" onclick="$('#about-video').fadeOut(500)">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/ZwVDrCurr1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <section id="categories">
         <div class="container" id="sliders">
@@ -205,7 +218,7 @@
                 </div>
             </div>
             <div class="c2">
-                <div class="categories-body row " id="sliders-body"  data-aos="zoom-in">
+                <div class="categories-body row " id="sliders-body" data-aos="zoom-in">
                     <div class="categories-swiper-container s-container active" data-name="local">
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
@@ -306,14 +319,14 @@
                     </div>
                 </div>
             </div>
-            <div class="more"  data-aos="fade-in"><a href="#"> Show more </a></div>
+            <div class="more" data-aos="fade-in"><a href="#"> Show more </a></div>
         </div>
     </section>
 
     <section id="news">
         <div class="container">
             <div class="c2">
-                <div class="news-head"  data-aos="fade-down">
+                <div class="news-head" data-aos="fade-down">
                     <h2>latest news</h2>
                 </div>
                 <div class="news-body">
@@ -325,8 +338,9 @@
                         </div>
                         <div class="news-text">
                             <h4><a href="#"> Contrary to popular belief, Lorem is not a text</a> </h4>
-                            <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in literature.
-                                 Latin since the year</p>
+                            <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in
+                                literature.
+                                Latin since the year</p>
                         </div>
                     </div>
                     <div class="news-item" data-aos="fade-left" data-aos-delay="500">
@@ -337,8 +351,9 @@
                         </div>
                         <div class="news-text">
                             <h4><a href="#"> Contrary to popular belief, Lorem is not a text</a> </h4>
-                            <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in literature.
-                                 Latin since the year</p>
+                            <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in
+                                literature.
+                                Latin since the year</p>
                         </div>
                     </div>
                     <div class="news-item" data-aos="fade-left" data-aos-delay="1000">
@@ -349,8 +364,9 @@
                         </div>
                         <div class="news-text">
                             <h4><a href="#"> Contrary to popular belief, Lorem is not a text</a> </h4>
-                            <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in literature.
-                                 Latin since the year</p>
+                            <p>Contrary to popular belief, Lorem Ipsum is not a random text, rather it has roots in
+                                literature.
+                                Latin since the year</p>
                         </div>
                     </div>
                 </div>
@@ -381,7 +397,7 @@
                         </div>
                         <div class="top-text">
                             <h5>Call us: </h5>
-                            <h4>0540000000</h4>
+                            <h4> <a href="tel:0540000000"> 0540000000</a></h4>
                         </div>
                     </div>
                     <div class="top-info" data-aos="fade-left" data-aos-delay="500">
@@ -390,7 +406,7 @@
                         </div>
                         <div class="top-text">
                             <h5>Mail us: </h5>
-                            <h4>info@alemtiaz.com</h4>
+                            <h4> <a href="mailto:info@alemtiaz.com">info@alemtiaz.com</a> </h4>
                         </div>
                     </div>
                     <div class="top-info" data-aos="fade-left" data-aos-delay="1000">
@@ -428,11 +444,16 @@
                             <h3>Follow us</h3>
                         </div>
                         <div class="b-body">
-                            <div class="social-item" data-aos="fade-left" data-aos-delay="0"><a href="#"> <i class="fab fa-whatsapp"></i> </a></div>
-                            <div class="social-item" data-aos="fade-left" data-aos-delay="300"><a href="#"> <i class="fab fa-facebook-f"></i> </a></div>
-                            <div class="social-item" data-aos="fade-left" data-aos-delay="600"><a href="#"> <i class="fab fa-snapchat-ghost"></i> </a></div>
-                            <div class="social-item" data-aos="fade-left" data-aos-delay="900"><a href="#"> <i class="fab fa-instagram"></i> </a></div>
-                            <div class="social-item" data-aos="fade-left" data-aos-delay="1200"><a href="#"> <i class="fab fa-twitter"></i> </a></div>
+                            <div class="social-item" data-aos="fade-left" data-aos-delay="0"><a href="#"> <i
+                                        class="fab fa-whatsapp"></i> </a></div>
+                            <div class="social-item" data-aos="fade-left" data-aos-delay="300"><a href="#"> <i
+                                        class="fab fa-facebook-f"></i> </a></div>
+                            <div class="social-item" data-aos="fade-left" data-aos-delay="600"><a href="#"> <i
+                                        class="fab fa-snapchat-ghost"></i> </a></div>
+                            <div class="social-item" data-aos="fade-left" data-aos-delay="900"><a href="#"> <i
+                                        class="fab fa-instagram"></i> </a></div>
+                            <div class="social-item" data-aos="fade-left" data-aos-delay="1200"><a href="#"> <i
+                                        class="fab fa-twitter"></i> </a></div>
                         </div>
                     </div>
                     <div class="b-item footer-mail">
@@ -452,7 +473,7 @@
                     <div class="copy">
                         <p>&copy; All rights reserved, Al-Imtiaz Co. Ltd. 2020 </p>
                     </div>
-                    <div class="credit">Made in  <a href="https://www.taswk.co.sa"><img
+                    <div class="credit">Made in <a href="https://www.taswk.co.sa"><img
                                 src="./assets/img/icons/taswk-en.png" alt=".." target="_blank"></a></div>
                 </div>
             </div>
