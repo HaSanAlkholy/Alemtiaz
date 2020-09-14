@@ -16,25 +16,61 @@ $color2: #bdbdbd;
   overflow: hidden !important;
 }
 
-body,
-html {
-  scroll-behavior: smooth;
-  width: 100%;
-  background-color: white;
-  font-family: "Tajawal", sans-serif;
-  color: black;
-  overflow-x: hidden;
-  line-height: 1.2;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 @font-face {
   font-family: "sstArabic";
   src: url("../fonts/SSTArabic-Bold.woff2") format("woff2"), url("../fonts/SSTArabic-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('../fonts/Tajawal-Medium.woff2') format('woff2'),
+      url('../fonts/Tajawal-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('../fonts/Tajawal-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Tajawal-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('../fonts/Tajawal-Bold.woff2') format('woff2'),
+      url('../fonts/Tajawal-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('../fonts/Tajawal-Regular.woff2') format('woff2'),
+      url('../fonts/Tajawal-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  background-color: white;
+  font-family: 'TajawalRegular', 'Tajawal', sans-serif;
+  color: black;
+  overflow-x: hidden;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 p {
